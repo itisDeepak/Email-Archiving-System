@@ -1,0 +1,106 @@
+/* EmailList.css */
+
+/* General page style */
+body {
+    background-color: #0e1b2c;
+    color: #e0e6ed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  a{
+    color: #fff;
+    font-style: italic;
+  }
+  
+  /* Container for the email table */
+  .email-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #162c3d;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+  }
+  
+  /* Title */
+  .email-title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  .email-table {
+    width: 100%;
+    table-layout: fixed; /* Prevents overflow */
+    border-collapse: collapse;
+    background-color: #1e3349;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  /* Table header */
+  .email-table thead {
+    background-color: #233d58;
+    color: #ffffff;
+  }
+  
+  /* Header & cell styling */
+  .email-table th,
+  .email-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #2c4a66;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-word;
+  }
+  
+  /* Row hover effect */
+  .email-row:hover {
+    background-color: #2a4a68;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  /* No emails message */
+  .no-emails {
+    text-align: center;
+    padding: 20px;
+    color: #bbb;
+  }
+  
+  /* Pagination controls */
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background-color: #1d6fd1;
+  }
+  

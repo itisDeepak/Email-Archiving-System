@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "exppress": "^0.0.1-security",
+    "express": "^5.1.0",
+    "googleapis": "^149.0.0",
+    "node-cron": "^4.0.7",
+    "pg": "^8.16.0"
+  }
+}
